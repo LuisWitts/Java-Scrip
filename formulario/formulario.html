@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulerio de cadastro</title>
+</head>
+<body>
+    <h1>conecte-se</h1>
+    <hr/>
+    <form>
+        seu email
+        <input type="text" id="email">
+        </form>
+    </br>
+        sua senha
+        <input type="password" id="senha">
+        <button onclick="valida()">Conectar!</button>
+        <div id="resultado"> 
+
+        </div>
+
+    </form>
+    <script>
+        function valida() 
+        //luis.witts@outlook.com
+        //221199Luis
+        {
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+            if(email === "luis.witts@outlook.com" && senha === "221199Luis")
+            {
+                document.getElementById("resultado").innerHTML="conectado";
+            }
+            else
+            {
+                document.getElementById("resultado").innerHTML = "Usuario/senha invalidos";
+            }
+
+            console.log("email digitado = "+ email);
+            console.log("senha digitada"+senha);
+        }    
+
+    </script>
+</body>
+</html>
