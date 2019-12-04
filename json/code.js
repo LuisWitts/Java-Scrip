@@ -25,8 +25,7 @@ function preencheHTML(json){
     result.innerHTML += "Rua do Usuário: "+json.address.street+"&#10003; <br>";
     result.innerHTML += "Nº da casa do Usuário: "+json.address.suite+"&#10003; <br>"
     result.innerHTML += "CEP do Usuário: "+json.address.zipcode+"&#10003; <br>"
-
-    result.innerHTML += "</br> ----------------------------------------------------- </br>"
+    result.innerHTML += "<strong> <hr> </strong> "
 
     
  

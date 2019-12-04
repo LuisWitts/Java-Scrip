@@ -1,0 +1,8 @@
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    
+}
+hr{
+    size: 5px;
+}
